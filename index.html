@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+
+    <main class="card">
+        <div class="top-gradient"></div>
+        <section id="card-content">
+            <article class="rating-card">
+                <div class="card-top">
+                    <div class="icon"><img src="assets/images/icon-star.svg" alt="star1"></div>
+                </div>
+                <div class="card-text">
+                    <h1>How did we do?</h1>
+                    <p>Please let us now how we did with your support request. All feedback is appreciated to help us improve
+                        our offering!</p>
+                </div>
+                <div class="card-rating-bar">
+                    <input type="radio" name="star-rating" id="star1">
+                    <label onclick="rating(1)" for="star1">
+                        <div>
+                            1
+                        </div>
+                    </label>
+                    <input type="radio" name="star-rating" id="star2">
+                    <label onclick="rating(2)" for="star2">
+                        <div>
+                            2
+                        </div>
+                    </label>
+                    <input type="radio" name="star-rating" id="star3">
+                    <label onclick="rating(3)" for="star3">
+                        <div>
+                            3
+                        </div>
+                    </label>
+                    <input type="radio" name="star-rating" id="star4">
+                    <label onclick="rating(4)" for="star4">
+                        <div>
+                            4
+                        </div>
+                    </label>
+                    <input type="radio" name="star-rating" id="star5">
+                    <label onclick="rating(5)" for="star5">
+                        <div>
+                            5
+                        </div>
+                    </label>
+                </div>
+                <div class="card-submit-button">
+                    <input type="button" value="SUBMIT">
+                </div>
+            </article>
+
+
+
+
+            <article class="thanks-card">
+                <div class="thanks-img">
+                    <img src="assets/images/illustration-thank-you.svg" alt="illustration thank you">
+                    <p id="thanks-response">You selected 4 out of 5</p>
+                </div>
+                <div class="thanks-text">
+                    <h1>Thank you!</h1>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+                        touch!</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
